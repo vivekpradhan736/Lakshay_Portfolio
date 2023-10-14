@@ -1,0 +1,389 @@
+@font-face {
+    font-family: myFont;
+    src: url("../assets/Gerbil.otf");
+  }
+
+.contact {
+    width: 90%;
+    margin: 3vw 4vw;
+  }
+  
+  .contact .heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 3vw;
+  }
+  
+  .contact .heading .headTitle {
+    font-size: 10vw;
+    font-weight: 600;
+    color: #9795956c;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+  
+  .contact .heading .picture {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 40%;
+    opacity: 0.4;
+  }
+
+  .contact .contactPart {
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+    width: 100%;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-bottom: 5vw;
+  }
+  
+  .contactPart .Left {
+    width: 45%;
+    padding: 2vw;
+    margin: auto 0;
+  }
+
+  .contactPart .Left h1 {
+    padding-bottom: 1.2vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    font-family: myFont;
+    color: rgb(167, 32, 240);
+  }
+
+  .contactPart .Left h5 {
+    padding-bottom: 2vw;
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: #4f4f4f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .contactPart .Left .contactList .list {
+    display: flex;
+    align-items: center;
+    padding-bottom: 1vw;
+  }
+
+  .contactPart .Left .contactList .list img {
+    width: 1.9vw;
+    height: 1.8vw;
+    margin-right: 1.5vw;
+    opacity: 0.4;
+  }
+
+  .contactPart .Left .contactList .list h4 {
+    font-size: 1.1vw;
+    font-weight: bold;
+    color: #4f4f4f;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .contactPart .Right {
+    width: 45%;
+    padding: 2vw;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #eff3f437;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.107), 0 6px 20px 0 rgba(74, 74, 74, 0.216);
+  }
+
+  form {
+	min-width: 25rem;
+	
+	.title {
+		font-family: 'Pacifico', cursive;
+		color: #212529;
+		font-size: 2.5rem;
+	}
+	
+  .form-group {
+    display: flex;
+    align-items: center;
+  }
+  .form-group .d-block {
+    /* transform: translateX(150%); */
+  }
+
+  .form-control {
+    background-color: #f2f6f8;
+		border-radius: 2rem;
+    border: none;
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		
+    &.thick {
+      height: 3.3rem;
+      padding: .5rem 1rem;
+    }
+		
+		&:focus {
+			background-color: #f2f6f8;
+			border: none;
+			box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+		}
+  }
+	
+	.message .form-control {
+			padding: .5rem 1.8rem;
+	}
+	
+  ::placeholder {
+    font-family: 'Quicksand', sans-serif;
+		font-weight: 600;
+    font-size: 1.1rem;
+    color: #838788;
+    position: relative;
+    left: 0;
+  }
+	
+  input,
+  textarea {
+		font-family: 'Quicksand', sans-serif;
+    color: #212529;
+    font-size: 1.1rem;
+  }
+	
+}
+.form-group .d-block .icon {
+  padding-top: 0.5vw;
+  padding-right: 1vw;
+  opacity: 0.6;
+}
+
+.btn.btn-primary {
+  font-family: 'Quicksand', sans-serif;
+	font-weight: bold;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  padding: 0 3rem;
+  border: 0;
+  border-radius: 3rem;
+  background-image: linear-gradient(
+    to right,
+    rgba(148, 31, 244, 0.685),
+    rgb(93, 3, 134)
+  );
+  background-size: 300% 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn.btn-primary:hover:enabled {
+  box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+  background-size: 100% 100%;
+  transform: translateY(-0.15em);
+}
+
+@media screen and (max-width: 1100px) {
+  .contactPart .Left {
+    width: 55%;
+  }
+
+  .contactPart .Left h1 {
+    font-size: 3vw;
+  }
+
+  .contactPart .Left h5 {
+    font-size: 1.5vw;
+  }
+
+  .contactPart .Left .contactList .list img {
+    width: 2.2vw;
+    height: 2vw;
+    margin-right: 1.5vw;
+    opacity: 0.4;
+  }
+
+  .contactPart .Left .contactList .list h4 {
+    font-size: 1.3vw;
+  }
+
+  .contactPart .Right {
+    width: 50%;
+    padding: 2vw;
+    margin: 0 auto;
+  }
+
+  form {
+    min-width: 20rem;
+    
+    .title {
+      font-size: 2.2rem;
+    }
+
+    .form-group {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+
+    .form-control {
+      background-color: #f2f6f8;
+      border-radius: 2rem;
+      border: none;
+      box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+      
+      &.thick {
+        height: 2.7rem;
+        padding: .4rem 1rem;
+      }
+      
+      &:focus {
+        background-color: #f2f6f8;
+        border: none;
+        box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.11);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .contactPart .Left h1 {
+    font-size: 3.5vw;
+  }
+
+  .contactPart .Left h5 {
+    font-size: 1.8vw;
+  }
+
+  .contactPart .Left .contactList .list img {
+    width: 2.4vw;
+    height: 2.2vw;
+  }
+
+  .contactPart .Left .contactList .list h4 {
+    font-size: 1.6vw;
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .contact .contactPart {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin-bottom: 8vw;
+    gap: 4vw;
+  }
+
+  .contactPart .Left {
+    width: 95%;
+    padding: 2vw;
+    margin: auto 5vw;
+  }
+
+  .contactPart .Left h1 {
+    font-size: 3.8vw;
+  }
+
+  .contactPart .Left h5 {
+    font-size: 2vw;
+  }
+
+  .contactPart .Left .contactList .list img {
+    width: 2.vw;
+    height: 2.5vw;
+  }
+
+  .contactPart .Left .contactList .list h4 {
+    font-size: 1.8vw;
+  }
+
+  .contactPart .Right {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  .contactPart .Left h1 {
+    font-size: 4.5vw;
+  }
+
+  .contactPart .Left h5 {
+    font-size: 2.3vw;
+  }
+
+  .contactPart .Left .contactList .list img {
+    width: 3vw;
+    height: 2.8vw;
+  }
+
+  .contactPart .Left .contactList .list h4 {
+    font-size: 2vw;
+  }
+
+  .contactPart .Right {
+    width: 85%;
+  }
+
+  .contactPart .Right {
+    padding: 3vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact {
+    width: 95%;
+    margin: 3vw 2vw;
+  }
+
+  .contact .heading {
+    margin-left: 4vw;
+    margin-right: 3vw;
+  }
+
+  .contact .heading .picture {
+    width: 8vw;
+    height: 8vw;
+  }
+
+  .contactPart .Left h1 {
+    font-size: 5.5vw;
+  }
+
+  .contactPart .Left h5 {
+    font-size: 2.7vw;
+  }
+
+  .contactPart .Left .contactList .list img {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .contactPart .Left .contactList .list h4 {
+    font-size: 2.5vw;
+  }
+
+  .contact .contactPart {
+    width: 100%;
+    margin: 0;
+  }
+
+  .contactPart .Right {
+    width: 85vw;
+    padding: 3vw;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .contactPart .Left h1 {
+    font-size: 6.4vw;
+  }
+
+  .contactPart .Left h5 {
+    font-size: 3.2vw;
+  }
+
+  .contactPart .Left .contactList .list img {
+    width: 5vw;
+    height: 4.8vw;
+  }
+
+  .contactPart .Left .contactList .list h4 {
+    font-size: 3vw;
+  }
+}

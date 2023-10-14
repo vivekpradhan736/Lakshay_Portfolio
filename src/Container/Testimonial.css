@@ -1,0 +1,443 @@
+@font-face {
+    font-family: myLove;
+    src: url('../assets/Mylove\ Script.otf');
+  }
+
+.testimonial {
+    width: 100%;
+    padding: 4vw 0;
+}
+
+.testimonial .testimonialHead {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.testimonial .testimonialHead h3 {
+    font-size: 0.9vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #6E7F99;
+    background-color: #EDEFF3;
+    margin-bottom: 1vw;
+    padding: 0.3vw 1vw;
+    border-radius: 4vw;
+}
+
+.testimonial .testimonialHead h1 {
+    font-size: 3vw;
+    font-weight: 600;
+    color: #273653;
+    margin-bottom: 1vw;
+}
+
+.testimonial .testimonialHead h2 {
+    font-size: 1.5vw;
+    font-weight: 400;
+    color: #4e6588;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+
+.testimonial .testimonialSlide {
+    height: 60vh;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+  
+    /* Center slide text vertically */
+  }
+
+  .swiper-slide .testimonialBox {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 0.5vw;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    overflow: hidden;
+  }
+
+  .swiper-slide .testimonialBox .purple {
+    width: 100%;
+    height: 58%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background: rgb(243,162,254);
+    background: linear-gradient(90deg, rgba(243,162,254,1) 0%, rgba(215,0,219,1) 100%);
+  }
+
+  .swiper-slide .testimonialBox .purple h2 {
+    font-size: 2.5vw;
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: 1.5vw;
+    font-family: myLove;
+  }
+
+  .swiper-slide .testimonialBox .purple h1 {
+    font-size: 3.7vw;
+    font-weight: 500;
+    color: hwb(228 0% 65%);
+    transform: translateY(-35%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .swiper-slide .testimonialBox .purple .commentBox {
+    background-color: rgb(255, 255, 255);
+    width: 68%;
+    height: 65%;
+    position: absolute;
+    top: 65%;
+    border-radius: 1vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .swiper-slide .testimonialBox .purple .commentBox .circle {
+    width: 30%;
+    height: 60%;
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: 1.2px solid white;
+    position: absolute;
+    top: -20%;
+    left: 35%;
+    overflow: hidden;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .swiper-slide .testimonialBox .purple .commentBox h4 {
+    font-size: 1vw;
+    color: #74767d;
+    margin-top: 5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .swiper-slide .testimonialBox .purple .commentBox h4 img {
+    display: inline;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.4vw;
+  }
+
+  .swiper-slide .testimonialBox .white {
+    width: 100%;
+    height: 42%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .swiper-slide .testimonialBox .white .whiteContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+  }
+
+  .swiper-slide .testimonialBox .white img {
+    width: 3.5vw;
+    height: 3.5vw;
+  }
+
+  .swiper-slide .testimonialBox .white .whiteContent .clientDetail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide .testimonialBox .white .whiteContent .clientDetail h3 {
+    font-size: 1.2vw;
+    font-weight: 600;
+    color: #3e3f3f;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .swiper-slide .testimonialBox .white .whiteContent .clientDetail h5 {
+    font-size: 1vw;
+    font-weight: 400;
+    color: #74767d;
+    text-transform: uppercase;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .swiper-slide .testimonialBox .white .whiteContent .clientDetail img {
+    width: 4vw;
+    height: 2vw;
+    margin-right: 0.5vw;
+    margin-bottom: 0.4vw;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  @media only screen and (max-width: 1200px) {
+    .testimonial .testimonialHead h3 {
+      font-size: 1.1vw;
+  }
+  
+  .testimonial .testimonialHead h1 {
+      font-size: 3.5vw;
+  }
+  
+  .testimonial .testimonialHead h2 {
+      font-size: 1.7vw;
+  }
+
+    .swiper-slide .testimonialBox .purple h2 {
+      font-size: 2.5vw;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 2vw;
+      font-family: myLove;
+    }
+  
+    .swiper-slide .testimonialBox .purple h1 {
+      font-size: 3.7vw;
+      font-weight: 500;
+      color: hwb(228 0% 65%);
+      transform: translateY(1%);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .swiper-slide .testimonialBox .purple .commentBox .circle {
+      width: 40%;
+      height: 65%;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1.2px solid white;
+      position: absolute;
+      top: -23%;
+      left: 30%;
+    }
+
+    .swiper-slide .testimonialBox .purple .commentBox h4 {
+      margin-top: 6vw;
+    }
+  }
+
+  @media only screen and (max-width: 1040px) {
+    .testimonial .testimonialHead h3 {
+      font-size: 1.3vw;
+  }
+  
+  .testimonial .testimonialHead h1 {
+      font-size: 3.8vw;
+  }
+  
+  .testimonial .testimonialHead h2 {
+      font-size: 1.9vw;
+  }
+
+    .swiper-slide .testimonialBox .purple h2 {
+      font-size: 2.5vw;
+      font-weight: 600;
+      color: #ffffff;
+      margin-top: 2vw;
+      font-family: myLove;
+    }
+  
+    .swiper-slide .testimonialBox .purple h1 {
+      font-size: 3.7vw;
+      font-weight: 500;
+      color: hwb(228 0% 65%);
+      transform: translateY(-9%);
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .swiper-slide .testimonialBox .purple .commentBox .circle {
+      width: 40%;
+      height: 70%;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1.2px solid white;
+      position: absolute;
+      top: -30%;
+      left: 30%;
+    }
+
+    .swiper-slide .testimonialBox .purple .commentBox h4 {
+      margin-top: 7vw;
+      font-size: 1.4vw;
+    }
+
+    .swiper-slide .testimonialBox .white .whiteContent {
+      margin-bottom: 2vw;
+    }
+  }
+
+  @media only screen and (max-width: 900px) {
+    .testimonial .testimonialHead h3 {
+      font-size: 1.5vw;
+  }
+  
+  .testimonial .testimonialHead h1 {
+      font-size: 4vw;
+  }
+  
+  .testimonial .testimonialHead h2 {
+      font-size: 2vw;
+  }
+
+    .swiper-slide .testimonialBox {
+      width: 90%;
+      height: 85%;
+    }
+
+    .swiper-slide .testimonialBox .purple .commentBox .circle {
+      width: 40%;
+      height: 60%;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1.2px solid white;
+      position: absolute;
+      top: -30%;
+      left: 30%;
+    }
+
+    .swiper-slide .testimonialBox .white .whiteContent {
+      /* margin-bottom: 2vw; */
+      width: 40vw;
+    }
+
+    .swiper-slide .testimonialBox .white .whiteContent .clientDetail h3 {
+      font-size: 1.7vw;
+      font-weight: 600;
+    }
+  
+    .swiper-slide .testimonialBox .white .whiteContent .clientDetail h5 {
+      font-size: 1.7vw;
+      font-weight: 400;
+    }
+  
+    .swiper-slide .testimonialBox .white .whiteContent .clientDetail img {
+      width: 10vw;
+      height: 3vw;
+      margin-right: 0.5vw;
+      margin-bottom: 0.4vw;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .testimonial .testimonialHead h3 {
+      font-size: 2.5vw;
+  }
+  
+  .testimonial .testimonialHead h1 {
+      font-size: 6vw;
+  }
+  
+  .testimonial .testimonialHead h2 {
+      font-size: 3vw;
+  }
+
+    .swiper-slide .testimonialBox {
+      width: 90%;
+      height: 75%;
+    }
+
+    .swiper-slide .testimonialBox .purple .commentBox h4 {
+      margin-top: 8vw;
+      font-size: 1.6vw;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    .testimonial .testimonialHead h3 {
+      font-size: 2.7vw;
+  }
+  
+  .testimonial .testimonialHead h1 {
+      font-size: 8.8vw;
+  }
+  
+  .testimonial .testimonialHead h2 {
+      font-size: 4vw;
+  }
+
+    .swiper-slide .testimonialBox {
+      width: 70%;
+      height: 85%;
+    }
+
+    .swiper-slide .testimonialBox .purple h2 {
+      margin-top: 5vw;
+      font-size: 4vw;
+      font-weight: 600;
+    }
+  
+    .swiper-slide .testimonialBox .purple h1 {
+      font-size: 5.7vw;
+      font-weight: 500;
+    }
+
+    .swiper-slide .testimonialBox .purple .commentBox .circle {
+      width: 40%;
+      height: 65%;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1.2px solid white;
+      position: absolute;
+      top: -30%;
+      left: 30%;
+    }
+    
+    .swiper-slide .testimonialBox .purple .commentBox h4 {
+      margin-top: 13vw;
+      font-size: 2.5vw;
+    }
+
+    .swiper-slide .testimonialBox .white img {
+      width: 4vw;
+      height: 4vw;
+    }
+
+    .swiper-slide .testimonialBox .white .whiteContent {
+      margin-bottom: 4vw;
+      width: 100vw;
+    }
+
+    .swiper-slide .testimonialBox .white .whiteContent .clientDetail h3 {
+      font-size: 2.5vw;
+      font-weight: 600;
+    }
+  
+    .swiper-slide .testimonialBox .white .whiteContent .clientDetail h5 {
+      font-size: 2.5vw;
+      font-weight: 400;
+    }
+  
+    .swiper-slide .testimonialBox .white .whiteContent .clientDetail img {
+      width: 15vw;
+      height: 3vw;
+      margin-right: 0.5vw;
+      margin-bottom: 0.4vw;
+    }
+  }

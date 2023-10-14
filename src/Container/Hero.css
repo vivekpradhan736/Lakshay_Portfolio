@@ -1,0 +1,233 @@
+@font-face {
+  font-family: myFont;
+  src: url("../assets/Gerbil.otf");
+}
+
+.hero {
+  width: 100%;
+  height: 70vh;
+  margin-bottom: 4vw;
+}
+
+.card {
+  margin-top: 2vw;
+  margin-left: 5vw;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  width: 90%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.card .bgImg {
+  width: 100%;
+  height: 100%;
+}
+
+.card .mainCard {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /* background-color: #932fffbc; */
+  background-image: linear-gradient(
+    to right,
+    rgba(148, 31, 244, 0.685),
+    rgb(93, 3, 134)
+  );
+  /* opacity: 0.8; */
+}
+
+.card .mainCard .content {
+  position: absolute;
+  top: 12%;
+  left: 9%;
+}
+
+.card .mainCard .content .mobileImg {
+  display: none;
+}
+
+.card .mainCard .content h1:nth-child(2) {
+  color: white;
+  font-size: 3vw;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.card .mainCard .content h1:nth-child(3) {
+  color: white;
+  font-size: 3.5vw;
+  font-weight: 700;
+  font-family: myFont;
+}
+
+.card .mainCard .content h1:nth-child(4) {
+  color: white;
+  font-size: 3.5vw;
+  font-weight: 700;
+  font-family: myFont;
+}
+
+.card .mainCard .content h4 {
+  color: rgba(255, 255, 255, 0.771);
+  font-size: 1.3vw;
+  font-weight: 600;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.card .mainCard .content .image {
+  display: inline;
+  width: 10%;
+  height: 15%;
+  border-radius: 1vw;
+  overflow: hidden;
+}
+
+.card .mainCard .content .image {
+  animation-name: move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-duration: 1.2s;
+}
+
+@keyframes move {
+  from {
+    transform: translatey(-10px);
+  }
+  to {
+    transform: translatey(5px);
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .card .mainCard .content {
+    position: absolute;
+    top: 20%;
+    left: 6%;
+  }
+
+  .card .mainCard .content h1:nth-child(1) {
+    font-size: 4vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h1:nth-child(2) {
+    font-size: 4.2vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h1:nth-child(3) {
+    font-size: 4.2vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h4 {
+    font-size: 1.7vw;
+    font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .card .mainCard .content {
+    position: absolute;
+    top: 25%;
+    left: 4%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card .mainCard .content {
+    position: absolute;
+    top: 40%;
+    left: 4%;
+  }
+
+  .card .mainCard .content .image {
+    display: none;
+  }
+
+  .card .mainCard .content .mobileImg {
+    position: absolute;
+    top: -60%;
+    left: 35%;
+    display: inline;
+    width: 25%;
+    height: 55%;
+    border-radius: 2vw;
+    overflow: hidden;
+  }
+
+  .card .mainCard .content .mobileImg {
+    animation-name: move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-duration: 1.2s;
+  }
+
+  @keyframes move {
+    from {
+      transform: translatey(-10px);
+    }
+    to {
+      transform: translatey(5px);
+    }
+  }
+
+  .card .mainCard .content h1:nth-child(2) {
+    font-size: 4.5vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h1:nth-child(3) {
+    font-size: 6.2vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h1:nth-child(4) {
+    font-size: 5.2vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h4 {
+    font-size: 2vw;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .card .mainCard .content {
+    position: absolute;
+    top: 45%;
+    left: 4%;
+  }
+
+  .card .mainCard .content .mobileImg {
+    width: 30%;
+    height: 58%;
+  }
+
+  .card .mainCard .content h1:nth-child(2) {
+    font-size: 5.5vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h1:nth-child(3) {
+    font-size: 7.2vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h1:nth-child(4) {
+    font-size: 5.2vw;
+    font-weight: 700;
+  }
+
+  .card .mainCard .content h4 {
+    font-size: 2.3vw;
+    font-weight: 600;
+  }
+}

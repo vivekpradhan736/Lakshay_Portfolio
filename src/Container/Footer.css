@@ -1,0 +1,114 @@
+@font-face {
+    font-family: Font;
+    src: url('../assets/Gerbil.otf');
+  }
+
+.footer {
+    margin: 1vw 3vw;
+}
+
+.footer .footerCard {
+    margin-top: 2vw;
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.footer .footerCard .title {
+    margin: 1vw 0;
+    text-align: center;
+}
+
+.footer .footerCard .title h1 {
+    font-size: 1.8vw;
+    font-weight: bold;
+    font-family: Font;
+    color: #7b11a9;
+}
+
+.footer .footerCard .social {
+    margin: 2vw 2vw 5vw 2vw;
+    width: 65%;
+}
+
+.footer .footerCard .social .socialLink {
+    padding: 2vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 0.1vw solid rgba(212, 209, 209, 0.537);
+    border-left: 0.1vw solid rgba(212, 209, 209, 0.537);
+}
+
+.footer .footerCard .social .socialLink:nth-child(3) {
+    border-right: 0.1vw solid rgba(212, 209, 209, 0.537);
+}
+
+.footer .footerCard .social .socialLink img {
+    transition: 0.3s ease-in-out;
+}
+
+.footer .footerCard .social .socialLink img:hover {
+    transform: scale(1.1);
+}
+
+.footer .footerCard .bottom {
+    margin: 0.3vw 2vw;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .footerCard .bottom h2 {
+    font-size: 1vw;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #959595;
+}
+
+@media only screen and (max-width: 992px) {
+    .footer .footerCard .title h1 {
+        font-size: 2.2vw;
+    }
+
+    .footer .footerCard .bottom h2 {
+        font-size: 1.3vw;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer .footerCard .title h1 {
+        font-size: 2.5vw;
+    }
+
+    .footer .footerCard .bottom h2 {
+        font-size: 1.6vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .footer .footerCard .title h1 {
+        font-size: 3vw;
+    }
+
+    .footer .footerCard .bottom h2 {
+        font-size: 2vw;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .footer .footerCard .title h1 {
+        font-size: 3.5vw;
+    }
+
+    .footer .footerCard .bottom h2 {
+        font-size: 2.1vw;
+        padding-bottom: 2vw;
+    }
+}
