@@ -31,7 +31,7 @@ const Footer = () => {
       </div>
 
       <div className='bottom'>
-        <h2>Copyleft © 2021 Lakshay Goyal</h2>
+        <h2>CopyRight © 2023 Lakshay Goyal</h2>
         <h2>Crafted with ❤️ by Lakshay Goyal</h2>
       </div>
       </div>
